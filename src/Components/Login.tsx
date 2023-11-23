@@ -41,14 +41,14 @@ export default function Login() {
           Log in
         </button>
         <div className="mt-20">
-          <h3 className="text-xl font-semibold mb-3">Or sign in with</h3>
+          <h3 className="text-normal font-semibold mb-3">Or sign in with</h3>
           <div className="flex items-center justify-center gap-2">
             {" "}
             <span className="bg-blue p-2 rounded-full bg-blue-600">
-              <Facebook size={`${30}px`} color="white" />
+              <Facebook size={`${25}px`} color="white" />
             </span>
             <span className="bg-blue p-2 rounded-full bg-black">
-              <X size={`${30}px`} color="white" strokeWidth={`${3}px`} />
+              <X size={`${25}px`} color="white" strokeWidth={`${3}px`} />
             </span>
           </div>
         </div>
