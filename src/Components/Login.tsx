@@ -2,8 +2,8 @@ import { Facebook, X } from "lucide-react";
 
 export default function Login() {
   return (
-    <div className=" bg-gradient-to-b from-violet-500 to-fuchsia-500 h-[100vh] w-[100vw] text-gray-600 flex items-center justify-center">
-      <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5 h-[480px]">
+    <div className=" bg-blue-900 h-[100vh] w-[100vw] text-gray-600 flex items-center justify-center">
+      <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5">
         <h2 className="text-2xl font-bold text-center mb-5">Login</h2>
         <div>
           <label htmlFor="username" className="text-normal font-semibold">
@@ -15,7 +15,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your username"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-gradient-to-b from-violet-500 to-fuchsia-500 outline-none transition-colors duration-1000"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black outline-none transition-colors duration-500 p-1"
             />
           </div>
         </div>
@@ -30,18 +30,18 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your password"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black transition-colors duration-1000 outline-none"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center p-1 focus:border-black transition-colors duration-1000 outline-none"
             />
           </div>
         </div>
         <button
           type="submit"
-          className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
+          className="bg-black text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
         >
           Log in
         </button>
         <div className="mt-20">
-          <h3 className="text-normal font-semibold mb-3 text-center">
+          <h3 className="text-sm font-semibold mb-3 text-center">
             Or sign in with
           </h3>
           <div className="flex items-center justify-center gap-2">
