@@ -1,8 +1,13 @@
 import { Facebook, X, EyeOff, Eye } from "lucide-react";
 import { useState } from "react";
-
-export default function Login() {
+interface onClickProps {
+  onClick: (password: number, username: string) => void;
+}
+export default function Login({ onClick }: onClickProps) {
   const [showPassword, setShowPassword] = useState(false);
+  const [password, setPassword] = useState("");
+  const [username, setusername] = useState<string>("");
+
   return (
     <div className=" bg-gray-500 h-[100vh] w-[100vw] text-gray-600 flex items-center justify-center">
       <form className="bg-white flex flex-col gap-5 w-[300px] sm:w-[400px] items-center rounded-lg py-5">
@@ -14,10 +19,12 @@ export default function Login() {
           <div>
             <input
               type="text"
+              value={username}
               name=""
-              id=""
+              id="two"
               placeholder="Enter your username"
               className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] sm:w-[350px] placeholder:text-center placeholder:sm:text-left focus:border-black outline-none transition-colors duration-500 p-1 sm:pb-0"
+              onChange={(e) => setusername(e.target.value)}
             />
           </div>
         </div>
@@ -29,10 +36,12 @@ export default function Login() {
             {" "}
             <input
               type={`${showPassword ? "text" : "password"}`}
+              value={password}
               name=""
-              id=""
+              id="one"
               placeholder="Enter your password"
               className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] sm:w-[350px] placeholder:text-center p-1 sm:pb-0 focus:border-black transition-colors duration-1000 outline-none placeholder:sm:text-left"
+              onChange={(e) => setPassword(e.target.value)}
             />
             {showPassword ? (
               <Eye
@@ -50,6 +59,10 @@ export default function Login() {
         <button
           type="submit"
           className="bg-black text-white font-bold py-2  text-lg w-[250px] sm:w-[350px] rounded-full text-center"
+          onClick={function (e) {
+            e.preventDefault();
+            onClick(Number(password), username);
+          }}
         >
           Log in
         </button>
