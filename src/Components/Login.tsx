@@ -1,4 +1,4 @@
-import { Facebook, Twitter } from "lucide-react";
+import { Facebook, X } from "lucide-react";
 
 export default function Login() {
   return (
@@ -36,7 +36,7 @@ export default function Login() {
         </div>
         <button
           type="submit"
-          className="bg-blue-900 text-white font-bold py-1 text-lg w-[250px] rounded-full text-center"
+          className="bg-black text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
         >
           Log in
         </button>
@@ -44,11 +44,11 @@ export default function Login() {
           <h3 className="text-xl font-semibold mb-3">Or sign in with</h3>
           <div className="flex items-center justify-center gap-2">
             {" "}
-            <span>
-              <Facebook size={`${30}px`} />
+            <span className="bg-blue p-2 rounded-full bg-blue-600">
+              <Facebook size={`${30}px`} color="white" />
             </span>
-            <span>
-              <Twitter size={`${30}px`} />
+            <span className="bg-blue p-2 rounded-full bg-black">
+              <X size={`${30}px`} color="white" strokeWidth={`${3}px`} />
             </span>
           </div>
         </div>
