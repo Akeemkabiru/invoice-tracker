@@ -2,7 +2,7 @@ import { Facebook, Twitter } from "lucide-react";
 
 export default function Login() {
   return (
-    <div className="bg-blue-900 h-full w-full text-gray-600 flex items-center justify-center">
+    <div className="bg-blue-900 h-[100vh] w-full text-gray-600 flex items-center justify-center">
       <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5">
         <h2 className="text-3xl font-bold text-center mb-5">Login</h2>
         <div>
