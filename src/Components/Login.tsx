@@ -3,7 +3,7 @@ import { Facebook, X } from "lucide-react";
 export default function Login() {
   return (
     <div className=" bg-gradient-to-b from-violet-500 to-fuchsia-500 h-[100vh] w-[100vw] text-gray-600 flex items-center justify-center">
-      <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5">
+      <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5 h-[480px]">
         <h2 className="text-2xl font-bold text-center mb-5">Login</h2>
         <div>
           <label htmlFor="username" className="text-normal font-semibold">
@@ -15,7 +15,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your username"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-2  placeholder:text-center focus:border-blue-900 outline-none transition-colors duration-1000"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-gradient-to-b from-violet-500 to-fuchsia-500 outline-none transition-colors duration-1000"
             />
           </div>
         </div>
@@ -30,13 +30,13 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your password"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-1 placeholder:text-center focus:border-blue-900 transition-colors duration-1000 outline-none"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black transition-colors duration-1000 outline-none"
             />
           </div>
         </div>
         <button
           type="submit"
-          className="bg-black text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
+          className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
         >
           Log in
         </button>
