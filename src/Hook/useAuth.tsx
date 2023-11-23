@@ -1,44 +1,29 @@
 import { useEffect, useReducer } from "react";
 
-interface User {
-  id: number;
-  username: string;
-}
-
-interface AuthState {
-  userDetails: User | null;
-  login: boolean;
-}
-
-type AuthAction =
-  | { type: "getUserLogin"; payload: User }
-  | { type: "login"; payload: boolean };
-
 export default function useAuth() {
-  function reducer(state: AuthState, action: AuthAction): AuthState {
+  function reducer(state, action) {
     switch (action.type) {
       case "getUserLogin":
         return { ...state, userDetails: action.payload };
       case "login":
         return { ...state, login: action.payload };
+        break;
+
       default:
-        return state;
+        break;
     }
   }
-
-  const initialState: AuthState = {
+  const initialState = {
     userDetails: null,
     login: false,
   };
-
   const [state, dispatch] = useReducer(reducer, initialState);
-
   useEffect(() => {
     async function getUserDetails() {
       try {
         const response = await fetch("http://localhost:3000/user");
         if (response.ok) {
-          const data: User = await response.json();
+          const data = await response.json();
           dispatch({ type: "getUserLogin", payload: data });
           console.log(data);
         } else {
@@ -54,7 +39,7 @@ export default function useAuth() {
 
   const { userDetails, login } = state;
 
-  function handleLogin(password: number, username: string) {
+  function handleLogin(password: number, username: "string") {
     if (password === userDetails?.id && username === userDetails?.username) {
       dispatch({ type: "login", payload: true });
     }

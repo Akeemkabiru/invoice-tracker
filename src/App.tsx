@@ -9,7 +9,7 @@ export default function App() {
       {login ? (
         `You are welcome ${userDetails?.firstName}`
       ) : (
-        <Login onClick={(password, username) => handleLogin} />
+        <Login onClick={handleLogin} />
       )}
     </div>
   );
