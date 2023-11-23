@@ -1,9 +1,11 @@
-import { Facebook, X } from "lucide-react";
+import { Facebook, X, EyeOff, Eye } from "lucide-react";
+import { useState } from "react";
 
 export default function Login() {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className=" bg-blue-900 h-[100vh] w-[100vw] text-gray-600 flex items-center justify-center">
-      <form className="bg-white flex flex-col gap-5 w-[300px] items-center rounded-lg py-5">
+      <form className="bg-white flex flex-col gap-5 w-[300px] sm:w-[400px] items-center rounded-lg py-5">
         <h2 className="text-2xl font-bold text-center mb-5">Login</h2>
         <div>
           <label htmlFor="username" className="text-normal font-semibold">
@@ -15,7 +17,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your username"
-              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black outline-none transition-colors duration-500 p-1"
+              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] sm:w-[350px] placeholder:text-center placeholder:sm:text-left focus:border-black outline-none transition-colors duration-500 p-1 sm:pb-0"
             />
           </div>
         </div>
@@ -23,20 +25,31 @@ export default function Login() {
           <label htmlFor="password" className="text-normal font-semibold">
             Password
           </label>
-          <div>
+          <div className="flex">
             {" "}
             <input
-              type="text"
+              type={`${showPassword ? "text" : "password"}`}
               name=""
               id=""
               placeholder="Enter your password"
-              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center p-1 focus:border-black transition-colors duration-1000 outline-none"
+              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] sm:w-[350px] placeholder:text-center p-1 sm:pb-0 focus:border-black transition-colors duration-1000 outline-none placeholder:sm:text-left"
             />
+            {showPassword ? (
+              <Eye
+                className="absolute transform sm:translate-x-80 translate-x-56"
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            ) : (
+              <EyeOff
+                className="absolute transform sm:translate-x-80 translate-x-56"
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            )}
           </div>
         </div>
         <button
           type="submit"
-          className="bg-black text-white font-bold py-2 text-lg w-[250px] rounded-full text-center"
+          className="bg-black text-white font-bold py-2  text-lg w-[250px] sm:w-[350px] rounded-full text-center"
         >
           Log in
         </button>
@@ -53,7 +66,6 @@ export default function Login() {
               <X size={`${20}px`} color="white" strokeWidth={`${3}px`} />
             </span>
             <span className="bg-blue py-1 px-2.5 rounded-full bg-red-600">
-              {/* <X size={`${25}px`} color="white" strokeWidth={`${3}px`} /> */}
               <div className="w-[18px] text-white font-semibold text-xl text-center">
                 G+
               </div>
