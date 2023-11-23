@@ -47,14 +47,14 @@ export default function Login() {
           <div className="flex items-center justify-center gap-2">
             {" "}
             <span className="bg-blue p-2 rounded-full bg-blue-600">
-              <Facebook size={`${25}px`} color="white" />
+              <Facebook size={`${20}px`} color="white" />
             </span>
             <span className="bg-blue p-2 rounded-full bg-black">
-              <X size={`${25}px`} color="white" strokeWidth={`${3}px`} />
+              <X size={`${20}px`} color="white" strokeWidth={`${3}px`} />
             </span>
-            <span className="bg-blue py-2 px-2.5 rounded-full bg-red-600">
+            <span className="bg-blue py-1 px-2.5 rounded-full bg-red-600">
               {/* <X size={`${25}px`} color="white" strokeWidth={`${3}px`} /> */}
-              <div className="w-[25px] text-white font-semibold text-xl">
+              <div className="w-[18px] text-white font-semibold text-xl text-center">
                 G+
               </div>
             </span>
