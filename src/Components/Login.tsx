@@ -15,7 +15,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your username"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-2 mt-2 placeholder:text-center focus:border-blue-900 outline-none transition-colors duration-1000"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-2  placeholder:text-center focus:border-blue-900 outline-none transition-colors duration-1000"
             />
           </div>
         </div>
@@ -30,13 +30,13 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your password"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-2 mt-2 placeholder:text-center focus:border-blue-900 transition-colors duration-1000 outline-none"
+              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-lg w-[250px] p-1 placeholder:text-center focus:border-blue-900 transition-colors duration-1000 outline-none"
             />
           </div>
         </div>
         <button
           type="submit"
-          className="bg-blue-900 text-white font-bold px-3 py-2 text-xl w-[250px] rounded-full text-center"
+          className="bg-blue-900 text-white font-bold px-3 py-2 text-lg w-[250px] rounded-full text-center"
         >
           Log in
         </button>
