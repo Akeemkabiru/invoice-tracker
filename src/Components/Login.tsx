@@ -15,7 +15,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your username"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black outline-none transition-colors duration-500 p-1"
+              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center focus:border-black outline-none transition-colors duration-500 p-1"
             />
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function Login() {
               name=""
               id=""
               placeholder="Enter your password"
-              className="border-b-4 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center p-1 focus:border-black transition-colors duration-1000 outline-none"
+              className="border-b-2 bg-transparent rounded placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[250px] placeholder:text-center p-1 focus:border-black transition-colors duration-1000 outline-none"
             />
           </div>
         </div>
