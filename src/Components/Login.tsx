@@ -41,7 +41,9 @@ export default function Login() {
           Log in
         </button>
         <div className="mt-20">
-          <h3 className="text-normal font-semibold mb-3">Or sign in with</h3>
+          <h3 className="text-normal font-semibold mb-3 text-center">
+            Or sign in with
+          </h3>
           <div className="flex items-center justify-center gap-2">
             {" "}
             <span className="bg-blue p-2 rounded-full bg-blue-600">
