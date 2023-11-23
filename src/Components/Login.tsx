@@ -50,6 +50,12 @@ export default function Login() {
             <span className="bg-blue p-2 rounded-full bg-black">
               <X size={`${25}px`} color="white" strokeWidth={`${3}px`} />
             </span>
+            <span className="bg-blue py-2 px-2.5 rounded-full bg-red-600">
+              {/* <X size={`${25}px`} color="white" strokeWidth={`${3}px`} /> */}
+              <div className="w-[25px] text-white font-semibold text-xl">
+                G+
+              </div>
+            </span>
           </div>
         </div>
       </form>
