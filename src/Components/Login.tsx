@@ -1,4 +1,4 @@
-import { Facebook, X, EyeOff, Eye } from "lucide-react";
+import { EyeOff, Eye } from "lucide-react";
 import { useState } from "react";
 interface onClickProps {
   onClick: (password: number, username: string) => void;
