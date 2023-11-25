@@ -13,7 +13,15 @@ export default function NewInvoice() {
         >
           {!openForm ? " + Add Invoice" : "Close"}
         </button>
-        {openForm && <InvoiceForm />}
+        <div
+          className={`${
+            openForm
+              ? "transition-all translate-x-[-50px] duration-1000"
+              : `translate-x-[1000px]`
+          }`}
+        >
+          <InvoiceForm />
+        </div>
       </div>
     </div>
   );

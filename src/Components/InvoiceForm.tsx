@@ -1,6 +1,6 @@
 export default function InvoiceForm() {
   return (
-    <form className="w-[250px] bg-gray-100 p-5 rounded-xl absolute translate-x-[-50px] mt-5">
+    <form className="w-[250px] bg-gray-100 p-5 rounded-xl absolute  mt-5">
       <input
         type="text"
         placeholder="Name"
