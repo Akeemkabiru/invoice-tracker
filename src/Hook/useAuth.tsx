@@ -4,7 +4,6 @@ interface User {
   id: number;
   username: string;
   firstName: string;
-  // Add other user details as needed
 }
 
 interface AuthState {
