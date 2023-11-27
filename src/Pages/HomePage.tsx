@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       <Navigation />
-      <div className="my-10 mx-40 ">
+      <div className="sm:my-10 sm:mx-40 mx-5">
         <NewInvoice />
         <Summary />
         <div className="mt-10 ">
