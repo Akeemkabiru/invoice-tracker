@@ -13,23 +13,23 @@ export default function Login({ onClick }: onClickProps) {
       <div className="flex items-center flex-col gap-5">
         <h2 className="text-2xl font-bold text-center ">Login</h2>
         <div className="flex flex-col gap-5 ">
-          <div>
+          <div className="w-80vw">
             <label htmlFor="username" className="text-lg font-semibold">
               Username
             </label>
-            <div>
+            <div className="w-[80vw]">
               <input
                 type="text"
                 value={username}
                 name=""
                 id="two"
                 placeholder="Enter your username"
-                className="border-2 bg-transparent rounded-xl placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[80vw] placeholder:text-center placeholder:sm:text-left border-gray-500 outline-none transition-colors duration-500 p-3"
+                className="border-2 bg-transparent rounded-xl placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal border-gray-500 outline-none p-3 w-full"
                 onChange={(e) => setusername(e.target.value)}
               />
             </div>
           </div>
-          <div>
+          <div className="">
             <label htmlFor="password" className="text-lg font-semibold">
               Password
             </label>
@@ -41,7 +41,7 @@ export default function Login({ onClick }: onClickProps) {
                 name=""
                 id="one"
                 placeholder="Enter your password"
-                className="border-2 bg-transparent rounded-xl placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal w-[80vw]  placeholder:text-center p-3  border-gray-500 transition-colors duration-1000 outline-none placeholder:sm:text-left"
+                className="border-2 bg-transparent rounded-xl placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal  p-3  border-gray-500 transition-colors duration-1000 outline-none w-full"
                 onChange={(e) => setPassword(e.target.value)}
               />
               {showPassword ? (
