@@ -64,7 +64,7 @@ export default function Login({ onClick }: onClickProps) {
           Log in
         </button>
       </div>
-      <div className="mt-40">
+      <div className="mt-44">
         <h3 className="text-sm font-semibold mb-3 text-center">
           Or sign in with
         </h3>
