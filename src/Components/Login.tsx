@@ -9,7 +9,7 @@ export default function Login({ onClick }: onClickProps) {
   const [username, setusername] = useState<string>("");
 
   return (
-    <form className="bg-white flex flex-col w-[100vw] h-[100vh] items-center justify-between pt-10 ">
+    <form className="bg-white flex flex-col w-[100vw] items-center justify-between pt-20 ">
       <div className="flex items-center flex-col gap-5">
         <h2 className="text-2xl font-bold text-center ">Login</h2>
         <div className="flex flex-col gap-5 ">
@@ -44,17 +44,12 @@ export default function Login({ onClick }: onClickProps) {
                 className="border-2 bg-transparent rounded-xl placeholder:text-gray-300 placeholder:font-semibold placeholder:text-normal  p-3  border-gray-500 transition-colors duration-1000 outline-none w-full"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              {showPassword ? (
-                <Eye
-                  className="absolute transform  translate-x-64 top-[35%]"
-                  onClick={() => setShowPassword(!showPassword)}
-                />
-              ) : (
-                <EyeOff
-                  className="absolute transform translate-x-64 top-[35%]"
-                  onClick={() => setShowPassword(!showPassword)}
-                />
-              )}
+              <div
+                onClick={() => setShowPassword(!showPassword)}
+                className="fixed right-12 top-[275px]"
+              >
+                {showPassword ? <Eye /> : <EyeOff />}
+              </div>
             </div>
           </div>
         </div>
@@ -69,7 +64,7 @@ export default function Login({ onClick }: onClickProps) {
           Log in
         </button>
       </div>
-      <div>
+      <div className="mt-40">
         <h3 className="text-sm font-semibold mb-3 text-center">
           Or sign in with
         </h3>
