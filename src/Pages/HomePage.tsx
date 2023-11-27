@@ -10,9 +10,7 @@ export default function HomePage() {
       <div className="sm:my-10 sm:mx-40 mx-5">
         <NewInvoice />
         <Summary />
-        <div className="mt-10 ">
-          <LatestInvoice />
-        </div>
+        <LatestInvoice />
       </div>
     </div>
   );
