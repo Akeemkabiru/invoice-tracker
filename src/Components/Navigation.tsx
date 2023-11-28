@@ -54,7 +54,9 @@ export default function Navigation() {
       </div>
       <div className="flex items-center sm:gap-10  gap-5 flex-row-reverse">
         <Menu size={`${25}px`} onClick={() => setOpen(true)} />
-        <div className="h-10 w-10 rounded-full bg-gray-400"></div>
+        <div className="h-10 w-10 rounded-full bg-gray-400">
+          <img src="./user.png" alt="" />
+        </div>
       </div>
     </nav>
   );
