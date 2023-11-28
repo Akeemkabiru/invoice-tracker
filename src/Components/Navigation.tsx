@@ -9,12 +9,12 @@ export default function Navigation() {
       <div className="flex items-center gap-5 text-lg">
         <h1 className=" font-sans-serif text-4xl font-semibold">Fl</h1>{" "}
         <div
-          className={`fixed inset-0 bg-black opacity-50 w-[100vw] h-full sm:hidden ${
+          className={`absolute inset-0 bg-black opacity-50 w-[100vw] h-full sm:hidden ${
             open ? "absolute" : "hidden"
           }`}
         ></div>
         <div
-          className={`sm:flex flex flex-col sm:flex-row fixed top-0 sm:relative font-semibold left-0 w-[250px] sm:w-auto h-full sm:h-auto sm:gap-5 text-white sm:text-black bg-black px-5 pt-36 sm:p-0 gap-10 sm:bg-white ${
+          className={`sm:flex flex flex-col sm:flex-row absolute top-0 sm:relative font-semibold left-0 w-[250px] sm:w-auto h-full sm:h-auto sm:gap-5 text-white sm:text-black bg-black px-5 pt-36 sm:p-0 gap-10 sm:bg-white ${
             open ? "block" : "hidden"
           } z-10`}
         >
