@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+
   return (
     <nav className="w-full flex items-center justify-between py-5 sm:px-10 px-5 border-gray-100 border-b-2">
       <div className="flex items-center gap-5 text-lg">
@@ -12,6 +13,7 @@ export default function Navigation() {
           className={`absolute inset-0 bg-black opacity-50 w-[100vw] h-full sm:hidden ${
             open ? "absolute" : "hidden"
           }`}
+          onClick={() => setOpen(false)}
         ></div>
         <div
           className={`sm:flex flex flex-col sm:flex-row absolute top-0 sm:relative font-semibold left-0 w-[250px] sm:w-auto h-full sm:h-auto sm:gap-5 text-white sm:text-black bg-black px-5 pt-36 sm:p-0 gap-10 sm:bg-white ${
