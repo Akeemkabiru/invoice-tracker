@@ -29,11 +29,11 @@ export default function Navigation() {
             onClick={() => setOpen(false)}
           />{" "}
           <div className="flex gap-2">
-            <Home color="white" fill="fill" />
+            <Home color="white" fill="fill" className="sm:hidden" />
             <NavLink to="/">Home</NavLink>{" "}
           </div>
           <div className="flex gap-2">
-            <Receipt />
+            <Receipt className="sm:hidden" />
             <NavLink
               to="/invoice"
               className="hover:p-1  hover:bg-gray-300 hover:rounded-md  hover:text-black"
@@ -42,7 +42,7 @@ export default function Navigation() {
             </NavLink>
           </div>
           <div className="flex gap-2">
-            <User />
+            <User className="sm:hidden" />
             <NavLink
               to="/clients"
               className="hover:p-1   hover:bg-gray-300 hover:rounded-md  hover:text-black"
