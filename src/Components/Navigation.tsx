@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Home, Menu, Receipt, User, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -28,24 +28,28 @@ export default function Navigation() {
             size={`${30}px`}
             onClick={() => setOpen(false)}
           />{" "}
-          <NavLink
-            to="/"
-            className="hover: p-1 hover:bg-gray-300 hover:rounded-md"
-          >
-            Home
-          </NavLink>{" "}
-          <NavLink
-            to="/invoice"
-            className="hover: p-1 hover:bg-gray-300 hover:rounded-md"
-          >
-            Invoice
-          </NavLink>
-          <NavLink
-            to="/clients"
-            className="hover: p-1 hover:bg-gray-300 hover:rounded-md"
-          >
-            Clients
-          </NavLink>
+          <div className="flex gap-2">
+            <Home color="white" fill="fill" />
+            <NavLink to="/">Home</NavLink>{" "}
+          </div>
+          <div className="flex gap-2">
+            <Receipt />
+            <NavLink
+              to="/invoice"
+              className="hover:p-1  hover:bg-gray-300 hover:rounded-md  hover:text-black"
+            >
+              Invoice
+            </NavLink>
+          </div>
+          <div className="flex gap-2">
+            <User />
+            <NavLink
+              to="/clients"
+              className="hover:p-1   hover:bg-gray-300 hover:rounded-md  hover:text-black"
+            >
+              Clients
+            </NavLink>
+          </div>
         </div>
       </div>
       <div className="flex items-center sm:gap-10  gap-5 flex-row-reverse">
