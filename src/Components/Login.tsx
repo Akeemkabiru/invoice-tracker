@@ -17,7 +17,7 @@ export default function Login({ onClick }: onClickProps) {
             <label htmlFor="username" className="text-lg font-semibold">
               Username
             </label>
-            <div className="w-[80vw]">
+            <div className="w-[80vw] sm:w-[30vw]">
               <input
                 type="text"
                 value={username}
@@ -46,7 +46,7 @@ export default function Login({ onClick }: onClickProps) {
               />
               <div
                 onClick={() => setShowPassword(!showPassword)}
-                className="fixed right-12 top-[275px]"
+                className="fixed right-12 top-[275px] sm:right-[35%]"
               >
                 {showPassword ? <Eye /> : <EyeOff />}
               </div>
@@ -55,7 +55,7 @@ export default function Login({ onClick }: onClickProps) {
         </div>
         <button
           type="submit"
-          className="bg-black text-white font-bold py-3  text-lg w-[80vw] rounded-full text-center mb-50"
+          className="bg-black text-white font-bold py-3  text-lg w-[80vw] sm:w-[30vw] rounded-full text-center mb-50"
           onClick={function (e) {
             e.preventDefault();
             onClick(Number(password), username);
@@ -64,7 +64,7 @@ export default function Login({ onClick }: onClickProps) {
           Log in
         </button>
       </div>
-      <div className="mt-52">
+      <div className="mt-52 sm:mt-40">
         <h3 className="text-sm font-semibold mb-3 text-center">
           Or sign in with
         </h3>

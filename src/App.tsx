@@ -14,7 +14,7 @@ export default function App() {
       <Routes>
         <Route
           path="/"
-          element={login ? <HomePage /> : <Login onClick={handleLogin} />}
+          element={!login ? <HomePage /> : <Login onClick={handleLogin} />}
         />
         <Route path="/invoice" element={<Invoice />} />
         <Route path="/clients" element={<Clients />} />
