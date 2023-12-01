@@ -25,7 +25,7 @@ export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
         <input
           type="date"
           placeholder="Date"
-          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0 w-[100%]"
         />
       </div>
     </div>
