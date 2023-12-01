@@ -4,12 +4,14 @@ type InvoiceFormProp = {
 };
 export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
   return (
-    <div className="fixed sm:w-[50vw] sm:h-[50vh] w-[80vw] h-[60vh] rounded-md sm:top-[20%] sm:left-[25%] bg-white sm:px-20 z-10 top-[15vh] left-[10vw] px-5">
-      <h1 className="absolute top-5 left-5 font-semibold text-xl">FI</h1>
+    <div className="fixed sm:w-[50vw] sm:h-[55vh] w-[80vw] h-[60vh] rounded-md sm:top-[20%] sm:left-[25%] bg-white sm:px-20 z-10 top-[15vh] left-[10vw] px-5">
+      <h1 className="absolute top-5 left-5 font-semibold text-xl sm:text-2xl">
+        FI
+      </h1>
       <X
         className="absolute right-5 top-5"
         onClick={OnClick}
-        size={`${30}px`}
+        size={`${25}px`}
       />
       <div className="flex flex-col gap-5 sm:mt-[10%] mt-[12vh]">
         <input
