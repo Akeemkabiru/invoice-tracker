@@ -1,23 +1,33 @@
-export default function InvoiceForm() {
+import { X } from "lucide-react";
+type InvoiceFormProp = {
+  OnClick: () => void;
+};
+export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
   return (
-    <form className="w-[250px] bg-gray-100 p-5 rounded-xl absolute  mt-5">
-      <input
-        type="text"
-        placeholder="Name"
-        className="w-full border-2 border-gray-400 p-1 rounded mb-5  bg-gray-100"
-      />
-      <input
-        type="text"
-        placeholder="items"
-        className="w-full border-2 border-gray-400 p-1 rounded mb-5  bg-gray-100"
-      />
-      <input
-        type="number"
-        name=""
-        id=""
-        placeholder="Price"
-        className="w-full border-2 border-gray-400 p-1 rounded bg-gray-100"
-      />
-    </form>
+    <div className="fixed sm:w-[50vw] sm:h-[50vh] w-[80vw] h-[60vh] rounded-md sm:top-[25%] sm:left-[25%] bg-gray-600 sm:px-20 z-10 top-[20vh] left-[10vw] px-5">
+      <X className="absolute right-5 top-5" onClick={OnClick} />
+      <div className="flex flex-col gap-5 sm:mt-[10%] mt-[12vh]">
+        <input
+          type="text"
+          placeholder="Buyer's name"
+          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+        />
+        <input
+          type="text"
+          placeholder="Product Bought"
+          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+        />
+        <input
+          type="text"
+          placeholder="Products Price"
+          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+        />
+        <input
+          type="date"
+          placeholder="Date"
+          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+        />
+      </div>
+    </div>
   );
 }
