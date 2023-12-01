@@ -4,7 +4,7 @@ type InvoiceFormProp = {
 };
 export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
   return (
-    <div className="fixed sm:w-[700px] sm:h-[350px] w-[350px] h-[400px] rounded-md sm:top-[20%] sm:left-[25%] bg-white sm:px-20 z-10 top-[15vh] left-[5vw] px-5">
+    <div className="fixed sm:w-[700px] sm:h-[350px] w-[350px] h-[450px] rounded-md sm:top-[20%] sm:left-[25%] bg-white sm:px-20 z-10 top-[15vh] left-[5vw] px-5">
       <h1 className="absolute top-5 left-5 font-semibold text-2xl">FI</h1>
       <X
         className="absolute right-5 top-5"
