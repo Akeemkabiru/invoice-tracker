@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from "react";
 
 interface User {
-  id: number;
+  password: number;
   username: string;
   firstName: string;
 }
@@ -37,7 +37,9 @@ export default function useAuth() {
   useEffect(() => {
     async function getUserDetails() {
       try {
-        const response = await fetch("http://localhost:3000/user");
+        const response = await fetch(
+          `http://localhost:3000/?${userDetails?.username}`
+        );
         if (response.ok) {
           const data: User = await response.json();
           dispatch({ type: "getUserLogin", payload: data });
@@ -58,7 +60,7 @@ export default function useAuth() {
   function handleLogin(password: number, username: string) {
     if (
       userDetails &&
-      password === userDetails.id &&
+      password === userDetails.password &&
       username === userDetails.username
     ) {
       dispatch({ type: "login", payload: true });

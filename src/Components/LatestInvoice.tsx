@@ -1,6 +1,6 @@
 export default function LatestInvoice() {
   return (
-    <div className="mt-10">
+    <div className="mt-20">
       <h1 className="font-semibold">Latest Invoice</h1>
       <div className="h-[60px] w-[200px] border-2 rounded-xl border-gray-300 flex-row pl-5 text-gray-700">
         <div className="flex text-lg font-bold gap-5 mb-1">

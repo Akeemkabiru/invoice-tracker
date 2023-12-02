@@ -1,9 +1,11 @@
 import { Home, Menu, Receipt, User, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import useAuth from "../Hook/useAuth";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+  const { userDetails } = useAuth();
 
   return (
     <nav className="w-full flex items-center justify-between py-5 sm:px-10 px-5 border-gray-100 border-b-2">
@@ -54,9 +56,12 @@ export default function Navigation() {
       </div>
       <div className="flex items-center sm:gap-10  gap-5 flex-row-reverse">
         <Menu size={`${25}px`} onClick={() => setOpen(true)} />
-        <div className="h-10 w-10 rounded-full bg-gray-400">
-          <img src="./user.png" alt="" />
-        </div>
+
+        <img
+          src={`${userDetails?.avatar}`}
+          alt=""
+          className="w-[35px] h-[35px] rounded-full bg-gray-400"
+        />
       </div>
     </nav>
   );

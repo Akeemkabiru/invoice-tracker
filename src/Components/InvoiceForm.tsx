@@ -14,7 +14,7 @@ export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
         <input
           type="text"
           placeholder="Buyer's name"
-          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0 placeholder:p-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0"
         />
         <input
           type="text"

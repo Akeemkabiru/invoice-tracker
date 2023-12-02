@@ -7,6 +7,7 @@ export default function Login({ onClick }: onClickProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [username, setusername] = useState<string>("");
+  console.log(password);
 
   return (
     <form className="bg-white flex flex-col w-[100vw] items-center justify-between pt-20 ">
@@ -46,7 +47,7 @@ export default function Login({ onClick }: onClickProps) {
               />
               <div
                 onClick={() => setShowPassword(!showPassword)}
-                className="fixed right-12 top-[275px] sm:right-[35%]"
+                className="fixed right-12 top-[275px] sm:right-[36%]"
               >
                 {showPassword ? <Eye /> : <EyeOff />}
               </div>

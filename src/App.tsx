@@ -7,14 +7,16 @@ import Login from "./Components/Login";
 import useAuth from "./Hook/useAuth";
 
 export default function App() {
-  const { login, handleLogin } = useAuth();
+  const { login, handleLogin, userDetails } = useAuth();
+  console.log(login, userDetails);
+
   <Login onClick={handleLogin} />;
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path="/"
-          element={!login ? <HomePage /> : <Login onClick={handleLogin} />}
+          element={login ? <HomePage /> : <Login onClick={handleLogin} />}
         />
         <Route path="/invoice" element={<Invoice />} />
         <Route path="/clients" element={<Clients />} />
