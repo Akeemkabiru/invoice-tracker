@@ -4,7 +4,7 @@ type InvoiceFormProp = {
 };
 export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
   return (
-    <div className="fixed sm:w-[700px] rounded-md sm:mx-[25vw] sm:h-[400px] sm:my-[20vh] w-[350px] h-[450px]  bg-white  z-10 flex justify-center items-center mx-[20px] my-[100px]">
+    <div className="fixed sm:w-[700px] rounded-md sm:mx-[25vw] sm:h-[400px] sm:my-[20vh] w-[350px] h-[450px]  bg-white  z-10 flex justify-center items-center mx-[17px] my-[120px]">
       <X
         onClick={OnClick}
         size={`${25}px`}
