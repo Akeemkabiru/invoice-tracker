@@ -4,35 +4,34 @@ type InvoiceFormProp = {
 };
 export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
   return (
-    <div className="fixed sm:w-[700px] sm:h-[350px] w-[350px] h-[450px] rounded-md sm:top-[20%] sm:left-[25%] bg-white sm:px-20 z-10 top-[15vh] left-[5vw] px-5">
-      <h1 className="absolute top-5 left-5 font-semibold text-2xl">FI</h1>
+    <div className="fixed sm:w-1/2 rounded-md sm:mx-[25vw] sm:h-[60vh] sm:my-[20vh] w-[90vw] h-[75vh] mx-[5vw] my-[12.5vh] bg-white  z-10 flex justify-center items-center">
       <X
-        className="absolute right-5 top-5"
         onClick={OnClick}
         size={`${25}px`}
+        className="absolute right-2 top-2"
       />
-      <div className="flex flex-col gap-5 sm:mt-[10%] mt-[12vh]">
+      <div className="flex flex-col gap-5 w-[100%] sm:px-20 px-5">
         <input
           type="text"
           placeholder="Buyer's name"
-          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
         />
         <input
           type="text"
           placeholder="Product Bought"
-          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
         />
         <input
           type="text"
           placeholder="Products Price"
-          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
         />
         <input
           type="date"
           placeholder="Date"
-          className=" border-2 border-black rounded-md sm:p-1 p-2 focus:outline-0 w-[100%]"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0 w-[100%]"
         />
-        <button className="w-[100%] bg-black sm:p-1 p-2 rounded-md text-white font-semibold">
+        <button className="w-[100%] bg-black sm:p-1 p-3 rounded-md text-white font-semibold">
           Add Invoice
         </button>
       </div>
