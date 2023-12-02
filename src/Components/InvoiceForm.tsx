@@ -14,24 +14,24 @@ export default function InvoiceForm({ OnClick }: InvoiceFormProp) {
         <input
           type="text"
           placeholder="Buyer's name"
-          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0 placeholder:p-0"
         />
         <input
           type="text"
           placeholder="Product Bought"
-          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0"
         />
         <input
           type="text"
           placeholder="Products Price"
-          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0"
         />
         <input
           type="date"
           placeholder="Date"
-          className=" border-2 border-gray-500 rounded-md sm:p-1 p-3 focus:outline-0 w-[100%]"
+          className=" border-2 border-gray-500 rounded-md sm:p-1 p-2 focus:outline-0 w-[100%]"
         />
-        <button className="w-[100%] bg-black sm:p-1 p-3 rounded-md text-white font-semibold">
+        <button className="w-[100%] bg-black sm:p-1 p-2 rounded-md text-white font-semibold">
           Add Invoice
         </button>
       </div>
